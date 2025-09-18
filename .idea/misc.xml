@@ -9,10 +9,12 @@
         <option value="$PROJECT_DIR$/communication-between-services-feign/microservice1/pom.xml" />
         <option value="$PROJECT_DIR$/communication-between-services-feign/microservice2/pom.xml" />
         <option value="$PROJECT_DIR$/scheduling-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/transaction-management/pom.xml" />
+        <option value="$PROJECT_DIR$/grpc/grpc-stock-trading/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21 (9)" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

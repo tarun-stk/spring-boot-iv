@@ -1,0 +1,1 @@
+When we added grpc starter dependency in the pom.xml, so after building the classes will be generated in target folder, whichever defined in .proto file

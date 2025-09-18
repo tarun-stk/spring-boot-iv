@@ -1,0 +1,5 @@
+order_id,first_name,last_name,email,cost,item_id,item_name,ship_date
+1001,John,Doe,john.doe@example.com,25.5,2001,Bouquet,2025-09-17
+1002,Jane,Smith,jane.smith@example.com,15.0,2002,Roses,2025-09-18
+1003,Bob,Brown,bob.brown@example.com,35.0,2003,Lilies,2025-09-19
+1004,Alice,White,alice.white@example.com,40.0,2004,Tulips,2025-09-20

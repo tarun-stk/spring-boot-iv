@@ -18,7 +18,7 @@ public class OrderFulfillmentController {
     private OrderFulfillmentService service;
 
     /*URL: http://localhost:8080/orders
-    * bodyL
+    * body
     * {
     "productId": 1,
     "name": "Mobile",
@@ -30,7 +30,7 @@ public class OrderFulfillmentController {
     public ResponseEntity<Order> processOrder(@RequestBody Order order) throws InterruptedException {
         service.processOrder(order); // synchronous
         /*All the below will be executed asynchronously, means once synchronous commn is done
-         * response will return frmo this method, and below methos will be keep on executing*/
+         * response will return from this method, and below methods will be keep on executing*/
         // asynchronous
         service.notifyUser(order);
         service.assignVendor(order);
@@ -40,7 +40,7 @@ public class OrderFulfillmentController {
         return ResponseEntity.ok(order);
     }
 
-    /*REsponse w/o using async: took 26secs
+    /*Response w/o using async: took 26secs
 
     * with using async took only 2sec
     logs: async methods going thru diff threads

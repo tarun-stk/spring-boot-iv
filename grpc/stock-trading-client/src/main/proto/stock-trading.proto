@@ -1,0 +1,27 @@
+//below tells what version of rpc are we using
+syntax="proto3";
+
+package stocktrading;
+//below tells to generate multiple files for all the messages and services defined
+option java_multiple_files=true;
+option java_package = "com.grpc";
+//below tells that the generated outer classname should be StockTradingProto
+option java_outer_classname = "StockTradingProto";
+
+service StockTradingService{
+//  UNARY - RPC -> get current stock price
+  rpc getStockPrice(StockRequest) returns (StockResponse);
+  //  server streaming
+  rpc subscribeStockPrice(StockRequest) returns (stream StockResponse);
+}
+
+message StockRequest{
+  string stock_symbol = 1;
+}
+
+message StockResponse{
+//  assing 1,2,3 tells rpc the order of the attributes
+  string stock_symbol = 1;
+  double price = 2;
+  string timestamp = 3;
+}

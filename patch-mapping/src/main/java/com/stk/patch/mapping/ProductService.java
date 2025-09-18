@@ -11,7 +11,8 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class ProductService {
     private final ProductRepository productRepository;
-    public Product partialUpdateProduct(Integer productId, Map<String, Object> body){
+
+    public Product partialUpdateProduct(Integer productId, Map<String, Object> body) {
         Product product = productRepository.findById(productId).orElseThrow(() -> new RuntimeException("No product found"));
         body.forEach((key, value) -> {
             Field field = ReflectionUtils.findField(Product.class, key);

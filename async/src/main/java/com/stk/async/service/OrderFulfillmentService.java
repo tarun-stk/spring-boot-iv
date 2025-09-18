@@ -33,8 +33,8 @@ public class OrderFulfillmentService {
     /*When working synchronously, we've to go through various steps, which actually doesn;t make sense
     * customer is only concerned whether order is confirmed or not, we should'nt keep him waiting until
     * we set dlivery partner, assign vendor, pakage the order
-    * once payment is done we can immediately send response to himn saying that order has been placed
-    * This is wher we need @Async using this we can process allt the async methods in async way
+    * once payment is done we can immediately send response to him saying that order has been placed
+    * This is where we need @Async using this we can process all the async methods in async way
     * by using multiple threads in backgounrd. if not usign it we will be only working with main thread
     * which must complete one task to continue other task, blocking in nature
     * To better understand below situation comment all async annos and send the requset

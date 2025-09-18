@@ -1,0 +1,8 @@
+
+grpc:
+  server:
+#    telling to run the grpc server on port 9090
+    port: 9090
+#    by doing below we're saying to enable application testing using postman/third party clients
+    enable-reflection: true
+

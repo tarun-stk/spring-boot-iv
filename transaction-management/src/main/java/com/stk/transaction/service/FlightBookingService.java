@@ -22,7 +22,7 @@ public class FlightBookingService {
     private PaymentInfoRepository paymentInfoRepository;
 
 
-    /*WIthout using below anno, the passengerInfo will still be saved because we're saving it before payment exeuction
+    /*Without using below anno, the passengerInfo will still be saved because we're saving it before payment exeuction
      * Actually payment is throwing exception and those details are nto being stored
      * in that scenario we've to not store passenger details also, as payment was not successful
      * if we use below anno, it will ensure that records will be inserted only when all the operations are successful

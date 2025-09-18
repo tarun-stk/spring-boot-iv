@@ -16,8 +16,8 @@ public class ProductController {
 
     /*URL: http://localhost:8080/products/4
     * body: {
-    "cost": 1001.0
-}*/
+        "cost": 1001.0
+    }*/
     @PatchMapping("/{id}")
     public ResponseEntity<Product> partialUpdateProduct(@PathVariable("id") Integer productId, @RequestBody Map<String, Object> body) {
         return ResponseEntity.status(HttpStatus.OK).body(productService.partialUpdateProduct(productId, body));
